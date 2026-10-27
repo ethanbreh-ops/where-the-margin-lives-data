@@ -1,0 +1,18 @@
+source,ref,row_id,model,gpu,n_gpu,framework,isl,osl,conc,measured_output_tput_per_gpu,ceiling_min_routing,ceiling_uniform_routing,share_of_hard_ceiling,share_of_uniform_ceiling,decode_bound,verdict,note
+InferenceX,R1,409792,gpt-oss-120b,h100,2,vllm,1024,1024,4,373.1,2487.8,1246.8,0.15,0.299,memory,ok,run  2026-05-17
+InferenceX,R1,409816,gpt-oss-120b,h100,2,vllm,1024,1024,8,616.0,4642.0,1528.6,0.133,0.403,memory,ok,run  2026-05-17
+InferenceX,R1,409794,gpt-oss-120b,h100,2,vllm,1024,1024,16,951.0,8186.6,1854.3,0.116,0.513,memory,ok,run  2026-05-17
+InferenceX,R1,409805,gpt-oss-120b,h100,2,vllm,1024,1024,32,1410.1,13242.5,2379.5,0.106,0.593,memory,ok,run  2026-05-17
+InferenceX,R1,409803,gpt-oss-120b,h100,2,vllm,1024,1024,64,2079.3,19158.4,3446.0,0.109,0.603,memory,ok,run  2026-05-17
+InferenceX,R1,409813,gpt-oss-120b,h100,2,vllm,8192,1024,4,329.0,1775.2,1038.0,0.185,0.317,memory,ok,run  2026-05-17
+InferenceX,R1,409814,gpt-oss-120b,h100,2,vllm,8192,1024,8,499.1,2654.1,1226.1,0.188,0.407,memory,ok,run  2026-05-17
+InferenceX,R1,409802,gpt-oss-120b,h100,2,vllm,8192,1024,16,692.7,3527.2,1427.3,0.196,0.485,memory,ok,run  2026-05-17
+InferenceX,R1,409801,gpt-oss-120b,h100,2,vllm,8192,1024,32,912.5,4221.7,1719.4,0.216,0.531,memory,ok,run  2026-05-17
+InferenceX,R1,409793,gpt-oss-120b,h100,2,vllm,8192,1024,64,1140.9,4682.7,2214.6,0.244,0.515,memory,ok,run  2026-05-17
+InferenceX,R3,445985,DeepSeek-R1-0528,h200,8,sglang,8192,1024,4,43.2,285.4,153.8,0.151,0.281,memory,ok,run  2026-10-22
+InferenceX,R3,445987,DeepSeek-R1-0528,h200,8,sglang,8192,1024,8,68.9,392.1,171.3,0.176,0.402,memory,ok,run  2026-10-22
+InferenceX,R3,445983,DeepSeek-R1-0528,h200,8,sglang,8192,1024,16,95.4,482.2,192.3,0.198,0.496,memory,ok,run  2026-10-22
+InferenceX,R3,445984,DeepSeek-R1-0528,h200,8,sglang,8192,1024,32,123.7,544.9,226.3,0.227,0.547,memory,ok,run  2026-10-22
+InferenceX,R3,445986,DeepSeek-R1-0528,h200,8,sglang,8192,1024,64,149.8,582.7,285.8,0.257,0.524,memory,ok,run  2026-10-22
+dstack (if output tokens),,,DeepSeek-R1-0528,h200,8,TensorRT-LLM,3200,800,128,522.0,1461.3,589.3,0.357,0.886,memory,ok,"https://dstack.ai/blog/h200-mi300x-deepskeek-benchmark/ (2025-03-18): 'highest online throughput of 4176 tokens/s on H200', concurrency sweep 4-128. The post doesn't say output vs total tokens; read here as output tokens. Model version is R1 (Jan 2025), not R1-0528; same architecture"
+dstack (if total tokens),,,DeepSeek-R1-0528,h200,8,TensorRT-LLM,3200,800,128,104.4,1461.3,589.3,0.071,0.177,memory,ok,Same figure read as input+output tokens: 4176 x 800/4000 = 835.2 output tokens/s
