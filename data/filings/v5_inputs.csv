@@ -24,3 +24,6 @@ NBIS_SEG_REV,Nebius,FY2025,Nebius (AI cloud) segment revenues incl. intersegment
 NBIS_SEG_EBITDA,Nebius,FY2025,Nebius segment Adjusted EBITDA,59.0,USD m,observed,"20-F FY2025, accession 0001104659-26-052948",Note: Segment information
 NBIS_LIFE,Nebius,FY2025,Useful life of servers and network equipment in FY2025,4,years,observed,"20-F FY2025, accession 0001104659-26-052948","Critical accounting estimates (extended to 5 years from 2026-01-01)"
 NBIS_LIFE_SAVING,Nebius,FY2026,Expected FY2026 depreciation reduction from 4->5 year change (assets in service at 2025 YE),167.6,USD m,observed (company estimate),"20-F FY2025, accession 0001104659-26-052948",Critical accounting estimates
+CRWV_COMMITTED_SHARE,CoreWeave,FY2025,Share of revenue from customer commitments (take-or-pay),98,%,observed,"10-K FY2025, accession 0001769628-26-000104",Note: Revenue (disaggregation); 96% in FY2024 and 88% in FY2023
+CRWV_TOP_CUSTOMER_SHARE,CoreWeave,FY2025,Share of revenue from top customer (Microsoft),67,%,observed,"10-K FY2025, accession 0001769628-26-000104",Risk factors: customer concentration
+CRWV_RPO,CoreWeave,FY2025,Remaining performance obligations at year end,60700,USD m,observed,"10-K FY2025, accession 0001769628-26-000104","Note: Revenue, RPO (43% within 24 months, 38% in months 25-48, rest in 49-84)"

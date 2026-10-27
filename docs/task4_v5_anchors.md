@@ -53,7 +53,12 @@ So the widely quoted ~70% "gross margin" is a margin **before the cost of the ma
 - **The audited range for GPU-owner margin after asset cost, FY2025 at reported lives, is about −10% to +27%.** The implied infrastructure margin in our chain should fall in that range, or we explain why.
 
 **Known reasons the chain could legitimately differ:**
-1. **Spot vs contract prices.** CoreWeave revenue is mostly multi-year committed contracts, while our chain prices market rental. [U] The 10-K's customer-concentration and remaining-performance-obligation disclosures should confirm the contract mix. That's the next read.
+1. **Spot vs contract prices: confirmed from the 10-K (read 2026-10-27).**
+   - **98%** of FY2025 revenue came from customer commitments: take-or-pay contracts of 1–6 years. The share was 96% in 2024 and 88% in 2023.
+   - **Microsoft alone was 67%** of revenue.
+   - Remaining performance obligations were **$60.7bn**: 43% to be recognised within 24 months, 38% in months 25–48, the rest in months 49–84.
+   - **So CoreWeave's margins are margins on negotiated multi-year contract prices, not on the spot or on-demand rental our chain uses.** Spot H100 prices that fall below contract rates would squeeze a spot-priced owner more than CoreWeave's audited margins suggest.
+   - **For V5, compare against these margins as a contract-price anchor, not a spot one.** Nebius doesn't disclose its committed share in the lines read so far [U].
 2. **Growth-phase timing.** $9.4bn of construction in progress isn't yet depreciating. Assets placed in service during the year earn part-year revenue and part-year depreciation.
 3. **Financing.** Interest of $1.2bn, 24% of revenue, is a real cost of owning GPUs. It sits below operating income, so a fully loaded $/GPU-hr needs a capital charge, not just depreciation.
 

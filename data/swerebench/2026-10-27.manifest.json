@@ -1,0 +1,9 @@
+{
+  "source": "https://swe-rebench.com/",
+  "snapshot_date": "2026-10-27",
+  "fetched_at_utc": "2026-10-27T04:42:29+00:00",
+  "source_sha256": "fbb1b659562843da266aa20ec2295253d727ccd9b9469c78ab32df6fad1fffed",
+  "models": 117,
+  "rows": 40326,
+  "csv_sha256": "5bc42202ea4ad75f0ba3880b53d3d094761f5375e8bb86e1d83d31328b5559a4"
+}

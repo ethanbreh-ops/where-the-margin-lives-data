@@ -1,0 +1,34 @@
+name: Checks
+
+# Kept separate from the daily snapshot so a registry or test failure never
+# blocks data capture.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Unit tests
+        run: |
+          for d in snapshots/*/; do
+            if ls "$d"test_*.py >/dev/null 2>&1; then
+              python -m unittest discover -s "$d" -p "test_*.py"
+            fi
+          done
+
+      - name: Source registry
+        run: python snapshots/registry/validate.py
+
+      - name: V5 margin bridge reconciles
+        run: python snapshots/filings/margin_bridge.py

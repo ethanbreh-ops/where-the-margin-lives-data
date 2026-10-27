@@ -1,0 +1,41 @@
+name: SWE-rebench weekly snapshot
+
+on:
+  schedule:
+    # Mondays 07:41 UTC; the leaderboard adds new task windows roughly monthly
+    - cron: "41 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commit
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Snapshot
+        run: python snapshots/swerebench/scrape_leaderboard.py --out data/swerebench
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/swerebench
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+          else
+            git commit -m "SWE-rebench snapshot $(date -u +%F)"
+            git pull --rebase
+            git push
+          fi

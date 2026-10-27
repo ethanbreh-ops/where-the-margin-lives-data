@@ -32,9 +32,13 @@ Date: 2026-10-27. This replaces section E1 of the Phase 1 memo.
 - Our own benchmarks become **reproduction (V2), not discovery**, and shrink from about $1,400 to about $350–450.
 - InferenceX's agentic traces can feed our queueing simulation instead of synthetic arrivals, if the dataset licence allows (see open items).
 
-**Unverified or open:**
-- The data terms of use for the API aren't stated. Don't bulk-republish their rows in our public repo until that's checked. Store run IDs and the derived comparison only.
-- The AgentX trace dataset's licence and composition: [U].
+**Terms, checked 2026-10-27:**
+- **InferenceX:** the [About FAQ](https://inferencex.semianalysis.com/about) says "All data is freely available" and that it can be used for your own analysis. No licence is named, and the footer says "All rights reserved."
+  - **Policy:** use the data, attribute it, and publish derived comparisons and individual cited values. Don't mirror their rows in bulk.
+  - Reference runs are recorded in [data/inferencex/reference_runs.csv](../data/inferencex/reference_runs.csv): IDs, run URLs and configurations only.
+- **AgentX traces:** dataset `semianalysis_cc_traces_weka_062126`, from 393 Claude Code sessions with prompts and code removed. Median input is 142k tokens per request and median output 444, and 44% of sessions use subagents.
+  - **No licence is stated**, so it's analysis only, and we don't republish it.
+- **This plan is superseded on budget by [zero_cost_plan.md](zero_cost_plan.md).** Self-run GPU benchmarks are now optional.
 
 ## 2. "Beyond Benchmarks: The Economics of AI Inference" (arXiv 2510.26136)
 
