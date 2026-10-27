@@ -1,0 +1,26 @@
+input_id,company,fiscal_year,item,value,units,status,source,locator
+CRWV_REV,CoreWeave,FY2025,Revenue,5131,USD m,observed,"10-K FY2025, accession 0001769628-26-000104",Consolidated Statements of Operations
+CRWV_COR,CoreWeave,FY2025,Cost of revenue,1453,USD m,observed,"10-K FY2025, accession 0001769628-26-000104",Consolidated Statements of Operations
+CRWV_TI,CoreWeave,FY2025,Technology and infrastructure,2929,USD m,observed,"10-K FY2025, accession 0001769628-26-000104",Consolidated Statements of Operations
+CRWV_SM,CoreWeave,FY2025,Sales and marketing,144,USD m,observed,"10-K FY2025, accession 0001769628-26-000104",Consolidated Statements of Operations
+CRWV_GA,CoreWeave,FY2025,General and administrative,651,USD m,observed,"10-K FY2025, accession 0001769628-26-000104",Consolidated Statements of Operations
+CRWV_OPEX,CoreWeave,FY2025,Total operating expenses,5177,USD m,observed,"10-K FY2025, accession 0001769628-26-000104",Consolidated Statements of Operations
+CRWV_OPINC,CoreWeave,FY2025,Operating income (loss),-46,USD m,observed,"10-K FY2025, accession 0001769628-26-000104",Consolidated Statements of Operations
+CRWV_PRETAX,CoreWeave,FY2025,Loss before income taxes,-1215,USD m,observed,"10-K FY2025, accession 0001769628-26-000104",Consolidated Statements of Operations
+CRWV_INT,CoreWeave,FY2025,"Interest expense, net",-1229,USD m,observed,"10-K FY2025, accession 0001769628-26-000104",Consolidated Statements of Operations
+CRWV_TI_DA,CoreWeave,FY2025,"D&A within technology and infrastructure (servers, switches, networking, internal software)",2300,USD m,observed (rounded),"10-K FY2025, accession 0001769628-26-000104","MD&A, T&I expense: 'approximately ... $2.3 billion'"
+CRWV_DA_TOTAL,CoreWeave,FY2025,Depreciation and amortization (all),2454,USD m,observed,"10-K FY2025, accession 0001769628-26-000104",Consolidated Statements of Cash Flows
+CRWV_LIFE,CoreWeave,FY2025,Useful life of technology equipment,6,years,observed,"10-K FY2025, accession 0001769628-26-000104","Note: Property and equipment (changed from 5 to 6 years effective 2023-01-01)"
+CRWV_TECH_GROSS,CoreWeave,FY2025,Technology equipment at cost (year end),20903,USD m,observed,"10-K FY2025, accession 0001769628-26-000104",Note: Property and equipment
+CRWV_CIP,CoreWeave,FY2025,Construction in progress (not yet depreciating),9376,USD m,observed,"10-K FY2025, accession 0001769628-26-000104",Note: Property and equipment
+NBIS_REV,Nebius,FY2025,Revenues (group),529.8,USD m,observed,"20-F FY2025, accession 0001104659-26-052948",Consolidated Statements of Operations
+NBIS_COR,Nebius,FY2025,Cost of revenues (group),166.2,USD m,observed,"20-F FY2025, accession 0001104659-26-052948",Consolidated Statements of Operations
+NBIS_PD,Nebius,FY2025,Product development,177.3,USD m,observed,"20-F FY2025, accession 0001104659-26-052948",Consolidated Statements of Operations
+NBIS_SGA,Nebius,FY2025,"Sales, general and administrative",380.1,USD m,observed,"20-F FY2025, accession 0001104659-26-052948",Consolidated Statements of Operations
+NBIS_DA,Nebius,FY2025,Depreciation and amortization (group; not disclosed by segment),417.9,USD m,observed,"20-F FY2025, accession 0001104659-26-052948",Consolidated Statements of Operations
+NBIS_OPEX,Nebius,FY2025,Total operating costs and expenses,1141.5,USD m,observed,"20-F FY2025, accession 0001104659-26-052948",Consolidated Statements of Operations
+NBIS_OPLOSS,Nebius,FY2025,Loss from operations,-611.7,USD m,observed,"20-F FY2025, accession 0001104659-26-052948",Consolidated Statements of Operations
+NBIS_SEG_REV,Nebius,FY2025,Nebius (AI cloud) segment revenues incl. intersegment,480.3,USD m,observed,"20-F FY2025, accession 0001104659-26-052948",Note: Segment information
+NBIS_SEG_EBITDA,Nebius,FY2025,Nebius segment Adjusted EBITDA,59.0,USD m,observed,"20-F FY2025, accession 0001104659-26-052948",Note: Segment information
+NBIS_LIFE,Nebius,FY2025,Useful life of servers and network equipment in FY2025,4,years,observed,"20-F FY2025, accession 0001104659-26-052948","Critical accounting estimates (extended to 5 years from 2026-01-01)"
+NBIS_LIFE_SAVING,Nebius,FY2026,Expected FY2026 depreciation reduction from 4->5 year change (assets in service at 2025 YE),167.6,USD m,observed (company estimate),"20-F FY2025, accession 0001104659-26-052948",Critical accounting estimates

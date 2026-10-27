@@ -1,0 +1,13 @@
+company,step,numerator_usd_m,denominator_usd_m,margin_pct,status,basis
+CoreWeave,1. Reported gross margin (revenue - cost of revenue),3678,5131,71.7,calculated,Cost of revenue excludes server/network depreciation (in T&I)
+CoreWeave,2. Gross margin after server/network D&A,1378,5131,26.9,calculated,"Subtracts the ~$2.3bn T&I D&A (MD&A figure, rounded)"
+CoreWeave,2a. Step 2 if servers depreciated over 5 years,918,5131,17.9,estimated,T&I D&A scaled by 6/5; assumes all of it is 6-year technology equipment and ignores in-service timing
+CoreWeave,2a. Step 2 if servers depreciated over 4 years,228,5131,4.4,estimated,T&I D&A scaled by 6/4; assumes all of it is 6-year technology equipment and ignores in-service timing
+CoreWeave,3. GAAP operating margin,-46,5131,-0.9,calculated,"After remaining T&I (people, software), S&M, G&A"
+CoreWeave,4. Pre-tax margin,-1215,5131,-23.7,calculated,After $1.2bn net interest; financing cost of the GPU fleet
+Nebius group,1. Reported gross margin (revenues - cost of revenues),363.6,529.8,68.6,calculated,Group incl. Avride and TripleTen; D&A is a separate line
+Nebius group,2. Gross margin after all D&A,-54.3,529.8,-10.2,calculated,"Group D&A, mainly servers and network equipment (4-year life)"
+Nebius group,2a. Step 2 if servers depreciated over 5 years,29.3,529.8,5.5,estimated,D&A scaled by 4/5; the company's own FY2026 estimate of the change is -$167.6m on year-end assets
+Nebius group,3. GAAP operating margin,-611.7,529.8,-115.5,calculated,Includes Avride (autonomous driving) losses
+Nebius AI cloud segment,1. Segment Adjusted EBITDA margin,59.0,480.3,12.3,calculated,"Company non-GAAP measure, before all D&A"
+Nebius AI cloud segment,2. Segment margin after D&A (lower bound),-358.9,480.3,-74.7,estimated,Charges all group D&A to the segment; D&A is not disclosed by segment
