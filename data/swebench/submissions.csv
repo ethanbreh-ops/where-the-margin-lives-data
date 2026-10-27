@@ -1,0 +1,14 @@
+submission,model_display,model_ids,model_org,os_model,mini_version,model_release_date,resolved_pct_reported,total_cost_reported,instance_cost_reported,instance_calls_reported,resolved_pct_extracted,instances_extracted,data_issue
+20260217_mini-v2.0.0_claude-4-5-haiku-high,Claude 4.5 Haiku,claude-haiku-4-5-20251001,Anthropic,false,2.0.0,20251015,66.6,165.46221805000002,0.33092443610000005,66.154,67.0,500,per_instance_details disagrees with harness reports
+20260217_mini-v2.0.0_claude-4-5-opus-high,Claude 4.5 Opus,claude-4-5-opus,Anthropic,false,2.0.0,20251124,76.8,376.9539985,0.753907997,32.896,76.8,500,
+20260217_mini-v2.0.0_claude-4-5-sonnet-high,Claude 4.5 Sonnet,claude-sonnet-4-5-20250929,Anthropic,false,2.0.0,20250929,71.4,328.9482492,0.6578964984000001,48.3,71.2,500,2 instances without a harness verdict
+20260217_mini-v2.0.0_claude-4-6-opus,Claude 4.6 Opus,claude-opus-4-6,Anthropic,false,2.0.0,20260205,75.6,275.76132225,0.5515226445,28.932,75.6,500,
+20260217_mini-v2.0.0_deepseek-3-2-high,DeepSeek V3.2,deepseek-v3.2,DeepSeek,true,2.0.0,20251201,70.0,223.92324825,0.4478464965,88.506,70.0,500,
+20260217_mini-v2.0.0_gemini-3-flash-high,Gemini 3 Flash,gemini-3-flash-preview,Google DeepMind,false,2.0.0,20251217,75.8,177.98206539999998,0.35596413079999994,56.126,75.8,500,
+20260217_mini-v2.0.0_glm-5-high,GLM 5,glm-5,Z-AI,true,2.0.0,20260211,72.8,267.19456811,0.53438913622,76.176,72.8,500,
+20260217_mini-v2.0.0_gpt-5-2-high,GPT 5.2,gpt-5-2,OpenAI,false,2.0.0,20251211,72.8,236.78350885,0.4735670177,35.046,72.8,500,
+20260217_mini-v2.0.0_gpt-5-mini,GPT 5 mini,gpt-5-mini-2025-08-07,OpenAI,false,2.0.0,20250807,56.2,23.600609549999998,0.0472012191,20.342,56.2,500,
+20260217_mini-v2.0.0_kimi-k2-5-high,Kimi K2.5,kimi-k2.5,Moonshot AI,true,2.0.0,20260127,70.8,73.276870372,0.14655374074400002,51.178,70.8,500,
+20260217_mini-v2.0.0_minimax-2-5-high,MiniMax M2.5,minimax-m2.5,Minimax,true,2.0.0,20260212,75.8,36.644993922,0.073289987844,60.45,75.8,500,
+20260219_mini-v2.0.0_gpt-5-2-codex,GPT 5.2 Codex,gpt-5-2-codex,OpenAI,false,2.0.0,20251211,72.8,224.71194935,0.4494238987,28.072,72.8,500,trajectories identical to 20260217_mini-v2.0.0_gpt-5-2-high
+20260226_mini-v2.0.0_gemini-3-pro-high,Gemini 3 Pro,gemini-3-pro-preview,Google DeepMind,false,2.0.0,20251118,69.6,480.0099282,0.9600198564,51.282,70.6,500,resolved 70.6% vs reported 69.6%; per_instance_details disagrees with harness reports

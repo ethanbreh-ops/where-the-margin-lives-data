@@ -54,3 +54,17 @@ python snapshots/litellm/build_history.py --out data/litellm --cache <dir outsid
 
 Commit dates are not effective dates. Audit against the Wayback Machine before
 using this for event timing (see the LITELLM-PRICES entry in the registry).
+
+## SWE-bench agent trajectories
+
+[snapshots/swebench/extract_trajectories.py](snapshots/swebench/extract_trajectories.py)
+pulls per-call token usage (input, cache read and write, output, reasoning, cost)
+from the public mini-SWE-agent bash-only submissions, and takes each task's result
+from the evaluation harness's own reports. It checks every task's summed call
+cost against the published cost, and flags upstream data problems in
+`data/swebench/submissions.csv`. See
+[docs/agent_consumption_public_trajectories.md](docs/agent_consumption_public_trajectories.md).
+
+```bash
+python snapshots/swebench/extract_trajectories.py --out data/swebench
+```
