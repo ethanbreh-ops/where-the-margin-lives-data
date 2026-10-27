@@ -1,0 +1,53 @@
+name: OpenRouter daily snapshot
+
+on:
+  schedule:
+    # 06:17 UTC daily; off the hour because GitHub delays or drops jobs at :00 under load
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: openrouter-snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run unit tests
+        run: python -m unittest discover -s snapshots/openrouter -p "test_*.py"
+
+      - name: Snapshot
+        id: snap
+        # Exit 2 = written, but more than 5% of endpoint fetches failed. Commit what
+        # we have, then fail the job so the failure is visible.
+        run: python snapshots/openrouter/snapshot.py --out data/openrouter
+        continue-on-error: true
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/openrouter
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+          else
+            git commit -m "OpenRouter snapshot $(date -u +%F)"
+            git push
+          fi
+
+      - name: Fail if snapshot step failed
+        if: steps.snap.outcome == 'failure'
+        run: |
+          echo "Snapshot reported errors; see data/openrouter/raw/$(date -u +%F)/manifest.json"
+          exit 1
