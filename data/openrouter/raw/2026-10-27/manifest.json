@@ -1,16 +1,15 @@
 {
-  "endpoint_rows": 1995,
+  "endpoint_rows": 1994,
   "failures": {},
-  "fetched_at_utc": "2026-10-27T03:13:11+00:00",
-  "finished_at_utc": "2026-10-27T03:13:26+00:00",
+  "fetched_at_utc": "2026-10-27T03:23:17+00:00",
+  "finished_at_utc": "2026-10-27T03:23:24+00:00",
   "models_listed": 464,
   "models_with_endpoints": 464,
-  "renormalized_with_script_version": "1",
   "script_version": "1",
   "sha256": {
-    "endpoints.json.gz": "cd24e421fcfd18cc6f53b617bdd2cf20ffc38d89e787bbb23300abcfafe07d85",
-    "models.json.gz": "e1cfb80dcfaefbdc936f842cf344679f660c799202c20ccc00b36293ef8d392b",
-    "normalized/2026-10-27.csv": "afad701e5bb93a1ee51245664f9915b7f82979c27812077a2d10662892749dae"
+    "endpoints.json.gz": "3f807ed4b53406affe3b797e687b3218bbece21445a2ad849a7333152d7d5123",
+    "models.json.gz": "9ee97493308d9359f1742e380ac4c24c902275447fb1c47f6856da3d478090ce",
+    "normalized/2026-10-27.csv": "9935c3009e68bb42c2c27fb9f728e455f3c43405ac1a5e9f75cf9474fcf0b33e"
   },
   "snapshot_date": "2026-10-27",
   "source": "openrouter"
