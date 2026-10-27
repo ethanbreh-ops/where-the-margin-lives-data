@@ -39,3 +39,18 @@ Exit codes:
 - Listed prices only. Gives no information about volume or realized price.
 - GitHub may delay scheduled runs and, on public repositories, disables them
   after 60 days without repository activity. Check the Actions tab weekly.
+
+## LiteLLM price history
+
+[snapshots/litellm/build_history.py](snapshots/litellm/build_history.py) samples the
+last commit of each week to LiteLLM's community price file, then records every
+per-token price that was added, removed or changed between consecutive samples.
+Each row brackets the change between two commit SHAs, so the exact commit can be
+bisected later.
+
+```bash
+python snapshots/litellm/build_history.py --out data/litellm --cache <dir outside the repo>
+```
+
+Commit dates are not effective dates. Audit against the Wayback Machine before
+using this for event timing (see the LITELLM-PRICES entry in the registry).
