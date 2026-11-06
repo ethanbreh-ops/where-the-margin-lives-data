@@ -1,0 +1,16 @@
+{
+  "endpoint_rows": 2021,
+  "failures": {},
+  "fetched_at_utc": "2026-11-06T07:24:22+00:00",
+  "finished_at_utc": "2026-11-06T07:24:28+00:00",
+  "models_listed": 454,
+  "models_with_endpoints": 454,
+  "script_version": "1",
+  "sha256": {
+    "endpoints.json.gz": "5fb579f7db3c2abf5672e3cc4c4e7cfdbccb71a6280673eb19bcb8d2d1eb3067",
+    "models.json.gz": "c64aed85801cc71bd3f77c73a2920adca42cc68a614e23021fb3fd5eb2ef03cc",
+    "normalized/2026-11-06.csv": "6a52fea903502ae68586bd7de32ea4bdd3347bc9beb43bd1a55af28147a8b590"
+  },
+  "snapshot_date": "2026-11-06",
+  "source": "openrouter"
+}
